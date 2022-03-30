@@ -3,6 +3,7 @@
   text-align: center;
   padding: 30px 0;
   font-size: 30px;
+  margin-top: 50px;
 }
 
 
@@ -19,7 +20,7 @@ padding: 50px 0;
     background: rgb(245, 232, 208);
     width: 95%;
     margin: 0 auto;
-    font-size: 22px;
+    font-size: 30px;
     border-radius: 20px;
     
     span{
@@ -40,8 +41,8 @@ padding: 50px 0;
 .circle{
   background-color: green;
   color: white;
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,26 +61,26 @@ padding: 50px 0;
   .wrapItems{
     padding: 10px 0;
     li{
-      font-size: 15px;
+      font-size: 18px;
       line-height: 20px;
     }
   }
   .circle{
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
   }
 }
 
 @media(min-width:769px) and (max-width:1024px){
   .wrapItems{
     li{
-      font-size: 18px;
+      font-size: 20px;
       line-height: 25px;
     }
   }
 
   .circle{
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
   }
 }

@@ -7,7 +7,61 @@
   margin: 0;
   font-family: sans-serif;
 }
-body{
-  background-image: url(../public/images/bg.png);
+
+::-webkit-scrollbar{
+  display: none;
 }
 
+body{
+  background-image: url(../public/images/bg.png);
+  background-attachment: fixed;
+}
+
+
+.yozuv{
+  width: 550px;
+  height: 550px;
+}
+
+.headList i{
+  text-align: center;
+  background: rgb(17, 138, 38);
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 22px;
+  position: fixed;
+  z-index: 100;
+}
+
+.headDetail{
+  display: flex;
+  gap: 1px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+
+.headDetail i{
+  text-align: center;
+  background: rgb(17, 138, 38);
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 22px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.headDetail i:hover{
+  background: rgb(85, 185, 85);
+}
+
+
+@media(max-width:768px){
+  .yozuv{
+    width: 260px;
+    height: 260px;
+  } 
+}
