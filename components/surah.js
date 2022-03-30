@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import { useAppContext } from "../Context/AppContext";
-import styles from "../styles/surahs.module.scss";
+import styles from "../styles/surahs.module.scss"; 
 const Surah = ({ text, audio, arabic, ayahIndex }) => {
   console.log(ayahIndex);
   const { audioIndex, setAudioIndex } = useAppContext();
@@ -21,6 +21,7 @@ const Surah = ({ text, audio, arabic, ayahIndex }) => {
       <span onClick={autoplay}>
         <p className={styles.paragraf}>{text}</p>
         <p className={styles.arabic_paragraf}>{arabic}</p>
+        <p style={{fontSize:"30px"}}>🔉</p>
       </span>
       <audio
         className={styles.surah}
