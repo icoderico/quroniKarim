@@ -39,6 +39,7 @@ export default function Surah({ data, dataAudio, dataArabic }) {
       {data.ayahs.map((ayah, index) => (
         <Surahs
           key={ayah.number}
+          ayahIndex={ayah.number}
           text={ayah.text}
           audio={dataAudio.ayahs[index].audio}
           arabic={dataArabic.ayahs[index].text}
