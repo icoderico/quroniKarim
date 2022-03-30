@@ -1,10 +1,10 @@
 .wrapList {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
   justify-content: center;
   gap: 15px;
+  padding: 80px 0;
   li {
-    width: 20%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -80,5 +80,26 @@
 @keyframes slider {
   to {
     transform: translate(100%);
+  }
+}
+
+
+
+
+
+@media (max-width:768px){
+  .wrapList{
+    grid-template-columns: repeat(2, 47%);
+    li{
+      a{
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+  .wrapList{
+    grid-template-columns: repeat(3, 30%);
   }
 }

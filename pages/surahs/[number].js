@@ -1,6 +1,8 @@
 //
 import Head from "next/head";
 import Surahs from "../../components/surah";
+import Styles from "../../styles/detail.module.scss";
+
 export async function getServerSideProps(context) {
   const { params } = context;
   const response = await fetch(
@@ -35,15 +37,19 @@ export default function Surah({ data, dataAudio, dataArabic }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>home</h1>
-      <h2>{data.name + " " + data.englishName}</h2>
-      {data.ayahs.map((ayah, index) => (
-        <Surahs
-          key={ayah.number}
-          text={ayah.text}
-          audio={dataAudio.ayahs[index].audio}
-          arabic={dataArabic.ayahs[index].text}
-        ></Surahs>
-      ))}
+      <h2 className={Styles.nameSurah}>{data.englishName + " --- " + data.name}</h2>
+      <ul className={Styles.wrapDetail}>
+        {data.ayahs.map((ayah, index) => (
+          <li>
+            <Surahs
+              key={ayah.number}
+              text={ayah.text}
+              audio={dataAudio.ayahs[index].audio}
+              arabic={dataArabic.ayahs[index].text}
+            ></Surahs>
+          </li>
+        ))}
+      </ul>
 
       {console.log(data)}
     </div>
