@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "./list.module.scss";
+import styles from "../../styles/list.module.scss";
 
 export const getStaticProps = async () => {
   const response = await fetch("http://api.alquran.cloud/v1/surah");
