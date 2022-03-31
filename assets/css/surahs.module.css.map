@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,AAAA,CACF,OAAO,CAAE,IAAI,CAChB,AACD,AAAA,SAAS,AAAA,CACL,KAAK,CAAE,KAAK,CACf,AACD,AAAA,gBAAgB,AAAA,CACZ,KAAK,CAAE,GAAG,CACb",
+    "sources": [
+        "../../styles/surahs.module.scss"
+    ],
+    "names": [],
+    "file": "surahs.module.css"
+}
