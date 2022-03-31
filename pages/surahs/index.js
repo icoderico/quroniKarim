@@ -22,7 +22,7 @@ export default function Surahs({ data }) {
       </Head>
 
       <div className="headList">
-        <Link href={"/"}><i class="fa-solid fa-house"></i></Link>
+        <Link href={"/"}><i className="fa-solid fa-house"></i></Link>
       </div>
 
       <ul className={styles.wrapList}>
